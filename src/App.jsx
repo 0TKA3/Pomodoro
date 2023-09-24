@@ -74,6 +74,9 @@ function App() {
           <button disabled={available} onClick={startTimer}>Start</button>
           <button onClick={pauseTimer}>Pause</button>
         </div>
+        <div className="setting">
+          <button>Settings</button>
+        </div>
       </div>
     </>
   )

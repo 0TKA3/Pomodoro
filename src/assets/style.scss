@@ -25,6 +25,25 @@ body {
     font-family: Inter;
 }
 
+button {
+        cursor: pointer;
+        width: 200px;
+        height: 75px;
+        border-radius: 50px;
+        border: 1px solid #fafafaa0;
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        text-align: center;
+        font-family: Inter;
+        color: white;
+        font-size: 25px;
+        transition: transform 0.1s linear;
+        margin-bottom: 25px;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+
 .container {
     width: 100vw;
     height: 100vh;
@@ -58,21 +77,4 @@ body {
     display: flex;
     width: 500px;
     justify-content: space-around;
-    button {
-        cursor: pointer;
-        width: 200px;
-        height: 75px;
-        border-radius: 50px;
-        border: 1px solid #FAFAFA;
-        outline: none;
-        background-color: rgba(0, 0, 0, 0);
-        text-align: center;
-        font-family: Inter;
-        color: white;
-        font-size: 25px;
-        transition: transform 0.1s linear;
-        &:hover {
-            transform: scale(1.03);
-        }
-    }
 }
