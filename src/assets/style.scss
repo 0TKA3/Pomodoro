@@ -56,6 +56,8 @@ body {
 
 .buttons {
     display: flex;
+    width: 500px;
+    justify-content: space-around;
     button {
         cursor: pointer;
         width: 200px;
