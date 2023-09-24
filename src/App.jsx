@@ -11,6 +11,11 @@ function App() {
   const [singleBellSound] = useSound(singleBell);
   let [showSetting, setShowSettings] = useState(false);
 
+      
+  let [workInput, setWorkInput] = useState('25')
+  let [chillInput, setChillInput] = useState('5')
+
+
   let [workTime, setWorkTime] = useState('25:00')
   let [chillTime, setChillTime] = useState('5:00')
 
@@ -99,7 +104,7 @@ function App() {
           </button>
         </div>
         {showSetting ? (
-          <Settings settingsVisibility={settingsVisibility}></Settings>
+          <Settings settingsVisibility={settingsVisibility} workInput={workInput} setWorkInput={setWorkInput} chillInput={chillInput} setChillInput={setChillInput} setWorkTime={setWorkTime} setChillTime={setChillTime} setTimer={setTimer} pauseTimer={pauseTimer}></Settings>
         ) : (
           true
         )}

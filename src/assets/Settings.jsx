@@ -1,27 +1,27 @@
 import { useState } from "react";
 
-const Settings = ({settingsVisibility}) => {
-    
-     let [workInput, setWorkInput] = useState('')
-     let [chillInput, setChillInput] = useState('')
+const Settings = ({settingsVisibility, workInput, setWorkInput, chillInput, setChillInput,setWorkTime,setChillTime,setTimer,pauseTimer}) => {
 
     
   function settingsWorkTime() {
-    console.log('hi!')
+    setWorkTime(`${workInput}:00`)
+    setChillTime(`${chillInput}:00`)
+    setTimer(`${workInput}:00`)
     settingsVisibility()
+    pauseTimer()
   }
 
   function workInputHandler(event) {
     setWorkInput(event.target.value)
     if(workInput<=0) {
-        setWorkInput(0)
+        setWorkInput(1)
     }
   }
 
   function chillInputHandler(event) {
     setChillInput(event.target.value)
     if(chillInput<=0) {
-        setChillInput(0)
+        setChillInput(1)
     }
   }
 
