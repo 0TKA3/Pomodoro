@@ -77,7 +77,7 @@ function App() {
       } else {
         clearInterval(myInterval);
       }
-    }, 1000);
+    }, 1);
   }
 
   function pauseTimer() {
