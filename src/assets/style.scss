@@ -147,10 +147,23 @@ button {
         }
     }
     button {
-        width: 150px;
-        height: 70px;
+        width: 110px;
+        height: 50px;
     }
     .buttons {
         justify-content: space-evenly;
+    }
+    .setting {
+
+        .settings-button {
+            img {
+                width: 25px;
+                height: 25px;
+            }
+        }
+        button {
+            width: 45px;
+            height: 45px;
+        }
     }
 }
