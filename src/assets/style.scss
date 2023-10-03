@@ -102,6 +102,7 @@ button {
     padding: 25px;
     h1 {
         font-size: 22px;
+        font-weight: normal;
     }
     input {
         height: 50px;
@@ -110,7 +111,7 @@ button {
         padding: 15px;
         font-size: 32px;
         font-family: inter;
-        font-weight: 500;
+        font-weight: 400;
         margin-bottom: 20px;
         border-radius: 10px;
         text-align: center;
@@ -135,7 +136,7 @@ button {
     align-items: center;
 }
 
-@media (max-height: 896px) {
+@media (max-height: 915px) {
     .container {
         overflow: hidden;
     }
@@ -166,4 +167,18 @@ button {
             height: 45px;
         }
     }
+    .settings-body {
+        min-width: 80%;
+        max-width: 90%;
+        .buttons {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            button {
+                width: 100px;
+                height: 50px;
+            }
+        }
+    }
+
 }
